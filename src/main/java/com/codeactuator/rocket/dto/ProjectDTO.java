@@ -13,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 public class ProjectDTO {
 
-    private Integer id;
+    private Long id;
     private String name;
     private List<WorkforceDTO> resources = new ArrayList<>();
 }
