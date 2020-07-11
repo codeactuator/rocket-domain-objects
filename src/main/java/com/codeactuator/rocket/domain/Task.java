@@ -1,4 +1,4 @@
-package com.codeactuator.domain;
+package com.codeactuator.rocket.domain;
 
 import lombok.*;
 

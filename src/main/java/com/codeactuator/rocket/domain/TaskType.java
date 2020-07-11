@@ -1,4 +1,4 @@
-package com.codeactuator.domain;
+package com.codeactuator.rocket.domain;
 
 import lombok.*;
 
@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @ToString
 @NoArgsConstructor
-public class TaskStatus {
+public class TaskType {
 
     @Id
     @GeneratedValue

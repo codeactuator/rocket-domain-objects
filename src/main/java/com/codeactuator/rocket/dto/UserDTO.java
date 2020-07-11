@@ -1,4 +1,4 @@
-package com.codeactuator.dto;
+package com.codeactuator.rocket.dto;
 
 
 import javax.validation.constraints.NotEmpty;

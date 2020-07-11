@@ -1,1 +1,10 @@
+com\codeactuator\dto\UserDTO.class
+com\codeactuator\domain\Task.class
+com\codeactuator\domain\ProjectResource.class
 com\codeactuator\domain\App.class
+com\codeactuator\domain\Role.class
+com\codeactuator\domain\TaskStatus.class
+com\codeactuator\domain\TaskType.class
+com\codeactuator\domain\Project.class
+com\codeactuator\domain\TaskLog.class
+com\codeactuator\domain\Workforce.class

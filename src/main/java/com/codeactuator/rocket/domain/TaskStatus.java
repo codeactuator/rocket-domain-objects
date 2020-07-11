@@ -1,11 +1,10 @@
-package com.codeactuator.domain;
+package com.codeactuator.rocket.domain;
 
 import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.util.Date;
 
 
 @Entity
@@ -14,12 +13,10 @@ import java.util.Date;
 @EqualsAndHashCode
 @ToString
 @NoArgsConstructor
-public class TaskLog {
+public class TaskStatus {
 
     @Id
     @GeneratedValue
     private Long id;
-    private String description;
-    private float spentHrs;
-    private Date createdDate;
+    private String name;
 }
