@@ -21,10 +21,8 @@ public class Task {
     private String name;
     @OneToOne
     private TaskType taskType;
-    @ManyToOne
-    private Workforce assignee;
-    @ManyToOne
-    private Workforce assignedBy;
+    private Long assignee;
+    private Long assignedBy;
     private Date createdOn;
     @OneToOne
     private TaskStatus status;
