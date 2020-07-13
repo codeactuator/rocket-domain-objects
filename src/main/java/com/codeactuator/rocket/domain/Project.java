@@ -1,5 +1,6 @@
 package com.codeactuator.rocket.domain;
 
+
 import lombok.*;
 
 import javax.persistence.*;
@@ -23,14 +24,14 @@ public class Project {
     @OneToMany
     private Set<Task> tasks;
     @ElementCollection
-    private Set<Long> resources;
+    private Set<Workforce> resources;
     private Date created;
 
     public Project(String name){
         this.name = name;
     }
 
-    public void addResource(Long resource){
+    public void addResource(Workforce resource){
         if(resources == null){
             resources = new HashSet<>();
         }

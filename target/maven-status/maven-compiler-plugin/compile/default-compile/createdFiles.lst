@@ -1,5 +1,3 @@
-com\codeactuator\rocket\domain\App.class
-com\codeactuator\rocket\domain\ProjectResource.class
 com\codeactuator\rocket\domain\TaskStatus.class
 com\codeactuator\rocket\domain\Task.class
 com\codeactuator\rocket\dto\ProjectDTO.class
