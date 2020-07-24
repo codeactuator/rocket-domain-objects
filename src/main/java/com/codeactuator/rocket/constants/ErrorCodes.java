@@ -25,7 +25,7 @@ public class ErrorCodes {
         WORKFORCE_NOT_FOUND("Could not find the workforce!");
 
         private String message;
-        private PROJECT(String message){
+        private WORKFORCE(String message){
             this.message = message;
         }
 
