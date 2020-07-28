@@ -1,1 +1,10 @@
-D:\JavaPractice\Microservices\victoria\rocket-domain-objects\src\main\java\com\codeactuator\domain\App.java
+D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\domain\TaskType.java
+D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\dto\WorkforceDTO.java
+D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\domain\Project.java
+D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\domain\Role.java
+D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\domain\Task.java
+D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\domain\TaskLog.java
+D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\domain\TaskStatus.java
+D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\domain\Workforce.java
+D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\dto\ProjectDTO.java
+D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\dto\UserDTO.java
