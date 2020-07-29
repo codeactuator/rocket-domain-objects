@@ -12,14 +12,14 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @ToString
 @NoArgsConstructor
-public class Role {
+public class UserProfile {
 
     @Id
     @GeneratedValue
     private Long id;
     private String name;
 
-    public Role(String name) {
+    public UserProfile(String name) {
         this.name = name;
     }
 }

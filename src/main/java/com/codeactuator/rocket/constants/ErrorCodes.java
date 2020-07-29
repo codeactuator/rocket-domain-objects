@@ -17,7 +17,7 @@ public class ErrorCodes {
         public String toString() {
             return  message;
         }
-    };
+    }
 
 
     public enum WORKFORCE {
@@ -33,7 +33,7 @@ public class ErrorCodes {
         public String toString() {
             return  message;
         }
-    };
+    }
 
 
 }

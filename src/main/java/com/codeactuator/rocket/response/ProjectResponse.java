@@ -1,17 +1,15 @@
 package com.codeactuator.rocket.response;
 
-import com.codeactuator.rocket.domain.Project;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.codeactuator.rocket.dto.ProjectDTO;
+import lombok.*;
 
 @NoArgsConstructor
-@Getter
-@Setter
+@AllArgsConstructor
+@Data
 public class ProjectResponse {
 
     private boolean error;
     private String errorCode;
     private String errorMessage;
-    private Project project;
+    private ProjectDTO projectDTO;
 }
