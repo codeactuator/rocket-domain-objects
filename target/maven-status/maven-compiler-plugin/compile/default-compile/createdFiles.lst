@@ -8,6 +8,7 @@ com\codeactuator\rocket\constants\ErrorCodes$PROJECT.class
 com\codeactuator\rocket\dto\TaskDTO.class
 com\codeactuator\rocket\dto\TaskStatusDTO.class
 com\codeactuator\rocket\constants\ErrorCodes.class
+com\codeactuator\rocket\response\WorkforceResponse.class
 com\codeactuator\rocket\domain\Task.class
 com\codeactuator\rocket\dto\ProjectDTO.class
 com\codeactuator\rocket\response\ProjectResponse.class

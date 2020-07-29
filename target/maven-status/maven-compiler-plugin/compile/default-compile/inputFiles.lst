@@ -10,6 +10,7 @@ D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codea
 D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\domain\Project.java
 D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\dto\Marshallable.java
 D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\domain\TaskStatus.java
+D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\response\WorkforceResponse.java
 D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\domain\Workforce.java
 D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\dto\UserProfileDTO.java
 D:\GitProject\Microservices\rocket\rocket-domain-objects\src\main\java\com\codeactuator\rocket\constants\ErrorCodes.java
