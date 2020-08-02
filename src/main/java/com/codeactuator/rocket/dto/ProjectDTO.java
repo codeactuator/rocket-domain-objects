@@ -40,7 +40,9 @@ public class ProjectDTO implements Marshallable<Project, ProjectDTO> {
 
     @Override
     public void unmarshal(Project project) {
-        resources = project.getResources()
+        this.setId(project.getId());
+        this.setName(project.getName());
+        this.resources = project.getResources()
                 .stream()
                 .map(workforce -> {
                     WorkforceDTO workforceDTO = new WorkforceDTO();
