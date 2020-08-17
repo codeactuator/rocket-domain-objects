@@ -1,4 +1,4 @@
-package com.codeactuator.rocket.error;
+package com.codeactuator.rocket.exception;
 
 public class ProjectNotFoundException extends RuntimeException {
 
