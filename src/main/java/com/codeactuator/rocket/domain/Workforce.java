@@ -8,9 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
 @Entity
-@Data
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
 @NoArgsConstructor
-@AllArgsConstructor
 public class Workforce {
 
     @Id
