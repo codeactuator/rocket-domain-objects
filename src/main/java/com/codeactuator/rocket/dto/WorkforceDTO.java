@@ -15,7 +15,7 @@ public class WorkforceDTO implements Marshallable<Workforce, WorkforceDTO> {
     private Long id;
     private String name;
     private String email;
-    private UserProfileDTO role;
+    private UserProfileDTO userProfile;
 
     @Override
     public Workforce marshall() {
@@ -24,8 +24,8 @@ public class WorkforceDTO implements Marshallable<Workforce, WorkforceDTO> {
         workforce.setName(this.getName());
         workforce.setEmail(this.getEmail());
 
-        if(this.getRole() != null){
-            workforce.setUserProfile(this.getRole().marshall());
+        if(this.getUserProfile() != null){
+            workforce.setUserProfile(this.getUserProfile().marshall());
         }
         return workforce;
     }
@@ -39,7 +39,7 @@ public class WorkforceDTO implements Marshallable<Workforce, WorkforceDTO> {
         if(workforce.getUserProfile() != null){
             UserProfileDTO userProfileDTO = new UserProfileDTO();
             userProfileDTO.unmarshal(workforce.getUserProfile());
-            this.setRole(userProfileDTO);
+            this.setUserProfile(userProfileDTO);
         }
     }
 }
