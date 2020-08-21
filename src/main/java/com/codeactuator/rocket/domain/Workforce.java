@@ -2,10 +2,7 @@ package com.codeactuator.rocket.domain;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -16,7 +13,7 @@ import javax.persistence.OneToOne;
 public class Workforce {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;

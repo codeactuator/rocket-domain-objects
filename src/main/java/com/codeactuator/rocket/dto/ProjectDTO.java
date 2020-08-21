@@ -2,11 +2,11 @@ package com.codeactuator.rocket.dto;
 
 
 import com.codeactuator.rocket.domain.Project;
-import com.codeactuator.rocket.domain.Workforce;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -17,7 +17,7 @@ public class ProjectDTO implements Marshallable<Project, ProjectDTO> {
 
     private Long id;
     private String name;
-    private Set<WorkforceDTO> resources;
+    private Optional<Set<WorkforceDTO>> workforceDTOSet = Optional.empty();
 
 
     @Override
@@ -26,15 +26,12 @@ public class ProjectDTO implements Marshallable<Project, ProjectDTO> {
         project.setId(this.getId());
         project.setName(this.getName());
 
-        project.setResources(this.resources
-                .stream()
-                .map(workforceDTO -> {
-                    Workforce workforce = new Workforce();
-                    workforceDTO.marshall();
-                    return workforce;
-                })
-                .collect(Collectors.toSet())
-        );
+        if(this.workforceDTOSet.isPresent()){
+            this.workforceDTOSet.get()
+                    .stream()
+                    .map(workforceDTO -> workforceDTO.marshall())
+                    .collect(Collectors.toSet());
+        }
         return project;
     }
 
@@ -42,7 +39,8 @@ public class ProjectDTO implements Marshallable<Project, ProjectDTO> {
     public void unmarshal(Project project) {
         this.setId(project.getId());
         this.setName(project.getName());
-        this.resources = project.getResources()
+
+        Set<WorkforceDTO> workforceDTOS = project.getWorkforces()
                 .stream()
                 .map(workforce -> {
                     WorkforceDTO workforceDTO = new WorkforceDTO();
@@ -50,5 +48,6 @@ public class ProjectDTO implements Marshallable<Project, ProjectDTO> {
                     return workforceDTO;
                 })
                 .collect(Collectors.toSet());
+        this.workforceDTOSet = Optional.of(workforceDTOS);
     }
 }

@@ -18,24 +18,24 @@ import java.util.Set;
 public class Project {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     @OneToMany
     private Set<Task> tasks;
     @OneToMany
-    private Set<Workforce> resources;
+    private Set<Workforce> workforces;
     private Date created;
 
     public Project(String name){
         this.name = name;
     }
 
-    public void addResource(Workforce resource){
-        if(resources == null){
-            resources = new HashSet<>();
+    public void addResource(Workforce workforce){
+        if(workforces == null){
+            workforces = new HashSet<>();
         }
-        resources.add(resource);
+        workforces.add(workforce);
     }
 
     public void addTask(Task task){
