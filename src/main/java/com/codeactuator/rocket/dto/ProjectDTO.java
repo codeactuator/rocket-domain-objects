@@ -17,7 +17,7 @@ public class ProjectDTO implements Marshallable<Project, ProjectDTO> {
 
     private Long id;
     private String name;
-    private Optional<Set<WorkforceDTO>> workforceDTOSet = Optional.empty();
+    private Optional<Set<WorkforceDTO>> workforces = Optional.empty();
 
 
     @Override
@@ -26,8 +26,8 @@ public class ProjectDTO implements Marshallable<Project, ProjectDTO> {
         project.setId(this.getId());
         project.setName(this.getName());
 
-        if(this.workforceDTOSet.isPresent()){
-            this.workforceDTOSet.get()
+        if(this.workforces.isPresent()){
+            this.workforces.get()
                     .stream()
                     .map(workforceDTO -> workforceDTO.marshall())
                     .collect(Collectors.toSet());
@@ -48,6 +48,6 @@ public class ProjectDTO implements Marshallable<Project, ProjectDTO> {
                     return workforceDTO;
                 })
                 .collect(Collectors.toSet());
-        this.workforceDTOSet = Optional.of(workforceDTOS);
+        this.workforces = Optional.of(workforceDTOS);
     }
 }
