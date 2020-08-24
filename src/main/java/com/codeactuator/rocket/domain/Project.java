@@ -23,7 +23,7 @@ public class Project {
     private String name;
     @OneToMany
     private Set<Task> tasks;
-    @OneToMany
+    @ManyToMany
     private Set<Workforce> workforces;
     private Date created;
 

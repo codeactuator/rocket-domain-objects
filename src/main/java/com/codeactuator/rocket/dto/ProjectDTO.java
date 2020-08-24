@@ -18,6 +18,7 @@ public class ProjectDTO implements Marshallable<Project, ProjectDTO> {
     private Long id;
     private String name;
     private Optional<Set<WorkforceDTO>> workforces = Optional.empty();
+    private Optional<Set<TaskDTO>> tasks = Optional.empty();
 
 
     @Override
@@ -32,6 +33,13 @@ public class ProjectDTO implements Marshallable<Project, ProjectDTO> {
                     .map(workforceDTO -> workforceDTO.marshall())
                     .collect(Collectors.toSet());
         }
+
+        if(this.tasks.isPresent()){
+            this.tasks.get()
+                    .stream()
+                    .map(taskDTO -> taskDTO.marshall())
+                    .collect(Collectors.toSet());
+        }
         return project;
     }
 
@@ -40,14 +48,28 @@ public class ProjectDTO implements Marshallable<Project, ProjectDTO> {
         this.setId(project.getId());
         this.setName(project.getName());
 
-        Set<WorkforceDTO> workforceDTOS = project.getWorkforces()
-                .stream()
-                .map(workforce -> {
-                    WorkforceDTO workforceDTO = new WorkforceDTO();
-                    workforceDTO.unmarshal(workforce);
-                    return workforceDTO;
-                })
-                .collect(Collectors.toSet());
-        this.workforces = Optional.of(workforceDTOS);
+        if (project.getWorkforces() != null){
+            Set<WorkforceDTO> workforceDTOS = project.getWorkforces()
+                    .stream()
+                    .map(workforce -> {
+                        WorkforceDTO workforceDTO = new WorkforceDTO();
+                        workforceDTO.unmarshal(workforce);
+                        return workforceDTO;
+                    })
+                    .collect(Collectors.toSet());
+            this.workforces = Optional.of(workforceDTOS);
+        }
+
+        if(project.getTasks() != null) {
+            Set<TaskDTO> taskDTOS = project.getTasks()
+                    .stream()
+                    .map(task -> {
+                        TaskDTO taskDTO = new TaskDTO();
+                        taskDTO.unmarshal(task);
+                        return taskDTO;
+                    })
+                    .collect(Collectors.toSet());
+            this.tasks = Optional.of(taskDTOS);
+        }
     }
 }
