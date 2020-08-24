@@ -32,4 +32,6 @@ public class Task {
     private Set<Task> subTasks;
     @OneToMany
     private Set<TaskLog> logs;
+    @ManyToOne
+    private Project project;
 }

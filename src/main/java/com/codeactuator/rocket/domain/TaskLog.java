@@ -2,10 +2,7 @@ package com.codeactuator.rocket.domain;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 
@@ -23,4 +20,6 @@ public class TaskLog {
     private String description;
     private float spentHrs;
     private Date createdDate;
+    @ManyToOne
+    private Workforce workforce;
 }

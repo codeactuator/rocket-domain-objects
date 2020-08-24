@@ -21,7 +21,7 @@ public class Project {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    @OneToMany
+    @OneToMany(mappedBy = "true")
     private Set<Task> tasks;
     @ManyToMany
     private Set<Workforce> workforces;
