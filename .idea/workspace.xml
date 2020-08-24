@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a396c4f-be64-4ea3-a9ca-87c23516ac98" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/ProjectDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/ProjectDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rocket-domain-objects-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/rocket-domain-objects-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskDTO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,20 +23,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TaskDTO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="124" column="54" lean-forward="true" selection-start-line="124" selection-start-column="54" selection-end-line="124" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Project.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="85">
               <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectDTO.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProjectDTO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/ProjectDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+            <state relative-caret-position="347">
+              <caret line="67" column="36" lean-forward="true" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -69,7 +75,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskStatusDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskLogDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskTypeDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/UserProfileDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/response/ProjectResponse.java" />
@@ -88,6 +93,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Workforce.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Project.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/ProjectDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskDTO.java" />
       </list>
     </option>
   </component>
@@ -138,14 +144,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rocket-domain-objects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rocket-domain-objects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rocket-domain-objects" type="b2602c69:ProjectViewProjectNode" />
@@ -248,7 +246,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.66993463" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.29520696" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23933902" />
@@ -269,6 +267,30 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/ProjectDTO.java</url>
+          <line>62</line>
+          <properties />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskDTO.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskDTO.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/TaskLog.java">
@@ -465,13 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskLogDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -591,6 +606,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/WorkforceDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -598,17 +620,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Project.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/ProjectDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="347">
+          <caret line="67" column="36" lean-forward="true" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/ProjectDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+        <state relative-caret-position="275">
+          <caret line="124" column="54" lean-forward="true" selection-start-line="124" selection-start-column="54" selection-end-line="124" selection-end-column="54" />
         </state>
       </provider>
     </entry>
