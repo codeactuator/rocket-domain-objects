@@ -22,4 +22,6 @@ public class TaskLog {
     private Date createdDate;
     @ManyToOne
     private Workforce workforce;
+    @ManyToOne
+    private Task task;
 }

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5a396c4f-be64-4ea3-a9ca-87c23516ac98" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/TaskLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/TaskLog.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,20 +46,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskLog.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TaskLog.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/TaskLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="396">
+              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Task.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Task.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Task.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+            <state relative-caret-position="168">
+              <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -113,8 +114,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Workforce.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/ProjectDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/dto/TaskDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/TaskLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Project.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/TaskLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Task.java" />
       </list>
     </option>
@@ -276,10 +277,10 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.3398693" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.3398693" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -654,17 +655,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/TaskLog.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="168">
+          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/Task.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeactuator/rocket/domain/TaskLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        <state relative-caret-position="396">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>

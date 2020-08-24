@@ -31,7 +31,7 @@ public class Task {
     private TaskStatus status;
     @OneToMany
     private Set<Task> subTasks;
-    @OneToMany
+    @OneToMany(mappedBy = "task")
     private Set<TaskLog> logs;
     @ManyToOne
     private Project project;
