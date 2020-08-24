@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 
@@ -34,4 +35,18 @@ public class Task {
     private Set<TaskLog> logs;
     @ManyToOne
     private Project project;
+
+    public void addLogs(TaskLog taskLog){
+        if(logs == null){
+            logs = new HashSet<>();
+        }
+        logs.add(taskLog);
+    }
+
+    public void addSubTask(Task task){
+        if(subTasks == null){
+            subTasks = new HashSet<>();
+        }
+        subTasks.add(task);
+    }
 }
