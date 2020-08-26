@@ -1,6 +1,7 @@
 com\codeactuator\rocket\dto\Marshallable.class
 com\codeactuator\rocket\constants\ErrorCodes$PROJECT.class
 com\codeactuator\rocket\error\ApiSubError.class
+com\codeactuator\rocket\dto\ProjectDTO$Builder.class
 com\codeactuator\rocket\error\ApiError.class
 com\codeactuator\rocket\constants\ErrorCodes.class
 com\codeactuator\rocket\domain\Task.class

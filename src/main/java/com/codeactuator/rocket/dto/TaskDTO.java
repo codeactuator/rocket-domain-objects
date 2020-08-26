@@ -48,22 +48,28 @@ public class TaskDTO implements Marshallable<Task, TaskDTO>{
 
 
         //Setting Subtasks
-        task.setSubTasks(this.subTasks.stream()
-                .map(taskDTO -> {
-                    return taskDTO.marshall();
-                })
-                .collect(Collectors.toSet())
-        );
+        if(this.getSubTasks() != null && !this.getSubTasks().isEmpty()) {
+            task.setSubTasks(
+                    this.subTasks.stream()
+                            .map(taskDTO -> {
+                                return taskDTO.marshall();
+                            })
+                            .collect(Collectors.toSet())
+            );
+        }
+
 
 
         //Setting TaskLogs
-        task.setLogs(
-                this.logs.stream()
-                .map(taskLogDTO -> {
-                    return taskLogDTO.marshall();
-                })
-                .collect(Collectors.toSet())
-        );
+        if(this.getLogs() != null && !this.getLogs().isEmpty()) {
+            task.setLogs(
+                    this.logs.stream()
+                            .map(taskLogDTO -> {
+                                return taskLogDTO.marshall();
+                            })
+                            .collect(Collectors.toSet())
+            );
+        }
 
         return task;
     }
