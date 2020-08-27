@@ -1,10 +1,12 @@
 package com.codeactuator.rocket.dto;
 
 import com.codeactuator.rocket.domain.Task;
+import com.sun.corba.se.spi.orbutil.threadpool.Work;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -20,7 +22,7 @@ public class TaskDTO implements Marshallable<Task, TaskDTO>{
     private TaskTypeDTO taskType;
     private WorkforceDTO assignee;
     private WorkforceDTO assignedBy;
-    private Date createdOn;
+    private Date createdOn = Calendar.getInstance().getTime();
     private TaskStatusDTO status;
     private Set<TaskDTO> subTasks;
     private Set<TaskLogDTO> logs;
@@ -57,7 +59,6 @@ public class TaskDTO implements Marshallable<Task, TaskDTO>{
                             .collect(Collectors.toSet())
             );
         }
-
 
 
         //Setting TaskLogs
@@ -139,4 +140,75 @@ public class TaskDTO implements Marshallable<Task, TaskDTO>{
             this.setTaskType(taskTypeDTO);
         }
     }
+
+
+    public static class Builder {
+
+
+        private Long id;
+        private String name;
+        private TaskTypeDTO taskType;
+        private WorkforceDTO assignee;
+        private WorkforceDTO assignedBy;
+        private Date createdOn;
+        private TaskStatusDTO status;
+        private Set<TaskDTO> subTasks;
+        private Set<TaskLogDTO> logs;
+
+
+        public Builder(String name){
+            this.name = name;
+        }
+
+        public Builder id(Long id){
+            this.id = id;
+            return this;
+        }
+
+        public Builder taskType(TaskTypeDTO taskType){
+            this.taskType = taskType;
+            return this;
+        }
+
+        public Builder assignee(WorkforceDTO assignee){
+            this.assignee = assignee;
+            return this;
+        }
+
+        public Builder assignedBy(WorkforceDTO assignedBy){
+            this.assignedBy = assignedBy;
+            return this;
+        }
+
+        public Builder status(TaskStatusDTO status){
+            this.status = status;
+            return this;
+        }
+
+        public Builder subTasks(Set<TaskDTO> subTasks){
+            this.subTasks = subTasks;
+            return this;
+        }
+
+        public Builder logs(Set<TaskLogDTO> logs){
+            this.logs = logs;
+            return this;
+        }
+
+        public TaskDTO build(){
+            TaskDTO taskDTO = new TaskDTO();
+            taskDTO.setId(this.id);
+            taskDTO.setName(this.name);
+            taskDTO.setTaskType(this.taskType);
+            taskDTO.setStatus(this.status);
+            taskDTO.setAssignee(this.assignee);
+            taskDTO.setAssignedBy(this.assignedBy);
+            taskDTO.setSubTasks(this.subTasks);
+            taskDTO.setLogs(this.logs);
+            return taskDTO;
+        }
+
+    }
+
+
 }

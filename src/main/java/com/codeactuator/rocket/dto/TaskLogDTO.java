@@ -34,4 +34,32 @@ public class TaskLogDTO implements Marshallable<TaskLog, TaskLogDTO> {
         this.setSpentHrs(taskLog.getSpentHrs());
         this.setCreatedDate(taskLog.getCreatedDate());
     }
+
+
+    public static class Builder {
+
+        private Long id;
+        private String description;
+        private float spentHrs;
+        private Date createdDate;
+
+        public Builder(float spentHrs){
+            this.spentHrs = spentHrs;
+        }
+
+        public Builder id(Long id){
+            this.id = id;
+            return this;
+        }
+
+        public Builder description(String description){
+            this.description = description;
+            return this;
+        }
+
+
+
+    }
+
+
 }

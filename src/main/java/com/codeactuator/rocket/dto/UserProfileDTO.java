@@ -28,4 +28,27 @@ public class UserProfileDTO implements Marshallable<UserProfile, UserProfileDTO>
         this.setId(userProfile.getId());
         this.setName(userProfile.getName());
     }
+
+
+    public static class Builder {
+
+        private Long id;
+        private String name;
+
+        public Builder(String name){
+            this.name = name;
+        }
+
+        public Builder id(Long id){
+            this.id = id;
+            return this;
+        }
+
+        public UserProfileDTO build(){
+            UserProfileDTO userProfileDTO = new UserProfileDTO();
+            userProfileDTO.setId(this.id);
+            userProfileDTO.setName(this.name);
+            return userProfileDTO;
+        }
+    }
 }

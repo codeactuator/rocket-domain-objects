@@ -1,9 +1,13 @@
+com\codeactuator\rocket\dto\UserProfileDTO$Builder.class
+com\codeactuator\rocket\dto\WorkforceDTO$Builder.class
 com\codeactuator\rocket\dto\Marshallable.class
 com\codeactuator\rocket\constants\ErrorCodes$PROJECT.class
 com\codeactuator\rocket\error\ApiSubError.class
 com\codeactuator\rocket\dto\ProjectDTO$Builder.class
+com\codeactuator\rocket\dto\TaskDTO$Builder.class
 com\codeactuator\rocket\error\ApiError.class
 com\codeactuator\rocket\constants\ErrorCodes.class
+com\codeactuator\rocket\dto\TaskStatusDTO$Builder.class
 com\codeactuator\rocket\domain\Task.class
 com\codeactuator\rocket\dto\ProjectDTO.class
 com\codeactuator\rocket\dto\TaskLogDTO.class
@@ -11,11 +15,13 @@ com\codeactuator\rocket\domain\UserProfile.class
 com\codeactuator\rocket\dto\UserProfileDTO.class
 com\codeactuator\rocket\domain\TaskStatus.class
 com\codeactuator\rocket\exception\AppHttpException.class
+com\codeactuator\rocket\dto\TaskLogDTO$Builder.class
 com\codeactuator\rocket\domain\Project.class
 com\codeactuator\rocket\domain\Workforce.class
 com\codeactuator\rocket\error\ApiValidationError.class
 com\codeactuator\rocket\dto\TaskDTO.class
 com\codeactuator\rocket\dto\TaskStatusDTO.class
+com\codeactuator\rocket\dto\TaskTypeDTO$Builder.class
 com\codeactuator\rocket\response\WorkforceResponse.class
 com\codeactuator\rocket\exception\ProjectNotFoundException.class
 com\codeactuator\rocket\response\ProjectResponse.class

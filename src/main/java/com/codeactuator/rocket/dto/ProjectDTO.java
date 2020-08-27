@@ -21,61 +21,6 @@ public class ProjectDTO implements Marshallable<Project, ProjectDTO> {
     private Optional<Set<WorkforceDTO>> workforces = Optional.empty();
     private Optional<Set<TaskDTO>> tasks = Optional.empty();
 
-    public static class Builder {
-
-        private Long id;
-        private String name;
-        private Optional<Set<WorkforceDTO>> workforces = Optional.empty();
-        private Optional<Set<TaskDTO>> tasks = Optional.empty();
-
-        public Builder(String name){
-            this.name = name;
-        }
-
-        public Builder workforce(WorkforceDTO workforceDTO){
-            workforces.get().add(workforceDTO);
-            if(workforces.isPresent()) {
-                workforces.get().add(workforceDTO);
-            }else {
-                Set<WorkforceDTO> taskSet = new HashSet<>();
-                taskSet.add(workforceDTO);
-                workforces = Optional.of(taskSet);
-            }
-
-            return this;
-        }
-
-        public Builder workforces(Set<WorkforceDTO> workforceDTOS){
-            workforces = Optional.of(workforceDTOS);
-            return this;
-        }
-
-        public Builder task(TaskDTO taskDTO){
-            if(tasks.isPresent()) {
-                tasks.get().add(taskDTO);
-            }else {
-                Set<TaskDTO> taskSet = new HashSet<>();
-                taskSet.add(taskDTO);
-                tasks = Optional.of(taskSet);
-            }
-            return this;
-        }
-
-        public Builder tasks(Set<TaskDTO> taskDTOS){
-            tasks = Optional.of(taskDTOS);
-            return this;
-        }
-
-        public ProjectDTO build(){
-            ProjectDTO projectDTO = new ProjectDTO();
-            projectDTO.setName(this.name);
-            projectDTO.setWorkforces(this.workforces);
-            projectDTO.setTasks(this.tasks);
-
-            return projectDTO;
-        }
-    }
-
 
     @Override
     public Project marshall() {
@@ -131,4 +76,67 @@ public class ProjectDTO implements Marshallable<Project, ProjectDTO> {
             this.tasks = Optional.of(taskDTOS);
         }
     }
+
+
+
+    public static class Builder {
+
+        private Long id;
+        private String name;
+        private Optional<Set<WorkforceDTO>> workforces = Optional.empty();
+        private Optional<Set<TaskDTO>> tasks = Optional.empty();
+
+        public Builder(String name){
+            this.name = name;
+        }
+
+        public Builder id(Long id){
+            this.id = id;
+            return this;
+        }
+
+        public Builder workforce(WorkforceDTO workforceDTO){
+            if(workforces.isPresent()) {
+                workforces.get().add(workforceDTO);
+            }else {
+                Set<WorkforceDTO> taskSet = new HashSet<>();
+                taskSet.add(workforceDTO);
+                workforces = Optional.of(taskSet);
+            }
+            return this;
+        }
+
+        public Builder workforces(Set<WorkforceDTO> workforceDTOS){
+            workforces = Optional.of(workforceDTOS);
+            return this;
+        }
+
+        public Builder task(TaskDTO taskDTO){
+            if(tasks.isPresent()) {
+                tasks.get().add(taskDTO);
+            }else {
+                Set<TaskDTO> taskSet = new HashSet<>();
+                taskSet.add(taskDTO);
+                tasks = Optional.of(taskSet);
+            }
+            return this;
+        }
+
+        public Builder tasks(Set<TaskDTO> taskDTOS){
+            tasks = Optional.of(taskDTOS);
+            return this;
+        }
+
+        public ProjectDTO build(){
+            ProjectDTO projectDTO = new ProjectDTO();
+            projectDTO.setId(this.id);
+            projectDTO.setName(this.name);
+            projectDTO.setWorkforces(this.workforces);
+            projectDTO.setTasks(this.tasks);
+
+            return projectDTO;
+        }
+    }
+
+
 }

@@ -28,4 +28,28 @@ public class TaskStatusDTO implements Marshallable<TaskStatus, TaskStatusDTO> {
         this.setId(taskStatus.getId());
         this.setName(taskStatus.getName());
     }
+
+
+    public static class Builder {
+
+        private Long id;
+        private String name;
+
+        public Builder(String name){
+            this.name = name;
+        }
+
+        public Builder id(Long id){
+            this.id = id;
+            return this;
+        }
+
+        public TaskStatusDTO build(){
+            TaskStatusDTO taskStatusDTO = new TaskStatusDTO();
+            taskStatusDTO.setId(this.id);
+            taskStatusDTO.setName(this.name);
+
+            return taskStatusDTO;
+        }
+    }
 }
