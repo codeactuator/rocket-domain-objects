@@ -57,7 +57,7 @@
     </dependency>
   </dependencies>
 
-  <!--
+
   <distributionManagement>
     <repository>
       <id>nexus</id>
@@ -70,7 +70,7 @@
       <url>http://localhost:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
-  -->
+
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
