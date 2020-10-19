@@ -6,7 +6,7 @@
 
   <groupId>com.codeactuator</groupId>
   <artifactId>rocket-domain-objects</artifactId>
-  <version>1.0.0</version>
+  <version>0.0.1-SNAPSHOT</version>
 
   <name>rocket-domain-objects</name>
   <!-- FIXME change it to the project's website -->
